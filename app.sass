@@ -1,0 +1,53 @@
+body 
+  font-family: 'Dosis', sans-serif
+  color: #333
+  font-weight: 400
+img 
+  max-width: 100%
+  width: 100%
+.container
+  max-width: 80vw
+  margin: 0 auto  
+.side
+  border-top: 1px solid lightgray
+  border-bottom: 1px solid lightgray
+  margin-bottom: 1rem  
+  font-size: 0.725rem
+  padding: 0.25rem
+  display: grid
+  grid-template-columns: auto 45px 45px
+  align-items: center
+  .select
+    &--pagination,&--itemNos
+      display: flex
+      justify-content: flex-end
+  select 
+    border: none
+    outline: none
+.filters    
+  select 
+    border: none
+    outline: none
+    font-weight: 500
+.product-list 
+  display: grid
+  grid-template-columns: repeat(5,1fr)
+  grid-gap: 1rem  
+  a 
+    text-decoration: none
+    color: #333
+    font-size: 0.725rem
+    h3
+      font-weight: 500
+      margin: 0
+      margin-top: 0.2rem
+    .price
+      font-weight: 700
+      margin: 0.2rem 0
+    .info
+      font-style: italic    
+      div 
+        margin-bottom: 0.2rem
+  .banner-full
+    grid-column: 1/6
+  

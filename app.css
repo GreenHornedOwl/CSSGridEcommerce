@@ -1,0 +1,69 @@
+/* line 1, app.sass */
+body {
+  font-family: 'Dosis', sans-serif;
+  color: #333;
+  font-weight: 400; }
+
+/* line 5, app.sass */
+img {
+  max-width: 100%;
+  width: 100%; }
+
+/* line 8, app.sass */
+.container {
+  max-width: 80vw;
+  margin: 0 auto; }
+
+/* line 11, app.sass */
+.side {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem;
+  font-size: 0.725rem;
+  padding: 0.25rem;
+  display: grid;
+  grid-template-columns: auto 45px 45px;
+  align-items: center; }
+  /* line 21, app.sass */
+  .side .select--pagination, .side .select--itemNos {
+    display: flex;
+    justify-content: flex-end; }
+  /* line 24, app.sass */
+  .side select {
+    border: none;
+    outline: none; }
+
+/* line 28, app.sass */
+.filters select {
+  border: none;
+  outline: none;
+  font-weight: 500; }
+
+/* line 32, app.sass */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem; }
+  /* line 36, app.sass */
+  .product-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.725rem; }
+    /* line 40, app.sass */
+    .product-list a h3 {
+      font-weight: 500;
+      margin: 0;
+      margin-top: 0.2rem; }
+    /* line 44, app.sass */
+    .product-list a .price {
+      font-weight: 700;
+      margin: 0.2rem 0; }
+    /* line 47, app.sass */
+    .product-list a .info {
+      font-style: italic; }
+      /* line 49, app.sass */
+      .product-list a .info div {
+        margin-bottom: 0.2rem; }
+  /* line 51, app.sass */
+  .product-list .banner-full {
+    grid-column: 1/6; }
