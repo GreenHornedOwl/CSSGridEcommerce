@@ -27,12 +27,19 @@ img
 .filters    
   select 
     border: none
-    outline: none
+    outline: none 
     font-weight: 500
 .product-list 
   display: grid
-  grid-template-columns: repeat(5,1fr)
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-areas: "item1 item2 item3 item4 banner1" "banner2 item5 item6 item7 item8" "bannerfull bannerfull bannerfull bannerfull bannerfull" "item9 item10 item11 item12 banner3" "banner4 item13 item14 item15 item16" 
   grid-gap: 1rem  
+  @media (max-width: 1200px)
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-areas: "item1 item2 item3 banner1" "banner2 item4 item5 item6" "bannerfull bannerfull bannerfull bannerfull" "item7 item8 item9 banner3" "item10 item11 item12 item13" "banner4 item14 item15 item16" 
+  @media (max-width: 900px)
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-areas: "item1 banner1" "item2 item3" "banner2 item4" "item5 item6" "bannerfull bannerfull" "item7 item8" "item9 banner3" "item10 item11" "banner4 item12" "item13 item14" "item15 item16"
   a 
     text-decoration: none
     color: #333
@@ -47,7 +54,52 @@ img
     .info
       font-style: italic    
       div 
-        margin-bottom: 0.2rem
-  .banner-full
-    grid-column: 1/6
+        margin-bottom: 0.2rem  
+  .product
+    grid-column: span 1      
+  .product:nth-child(1)
+    grid-area: item1
+  .product:nth-child(2)
+    grid-area: item2 
+  .product:nth-child(3)
+    grid-area: item3
+  .product:nth-child(4)
+    grid-area: item4  
+  .product:nth-child(5)
+    grid-area: item5
+  .product:nth-child(6)
+    grid-area: item6
+  .product:nth-child(7)
+    grid-area: item7
+  .product:nth-child(8)
+    grid-area: item8
+  .product:nth-child(9)
+    grid-area: item9  
+  .product:nth-child(10)
+    grid-area: item10  
+  .product:nth-child(11)
+    grid-area: item11
+  .product:nth-child(12)
+    grid-area: item12      
+  .product:nth-child(13)
+    grid-area: item13
+  .product:nth-child(14)
+    grid-area: item14  
+  .product:nth-child(15)
+    grid-area: item15 
+  .product:nth-child(16)
+    grid-area: item16   
+
+  .banner:nth-child(17)
+    grid-area: banner1 
+  .banner:nth-child(18)
+    grid-area: banner2 
+  .banner:nth-child(19)
+    grid-area: banner3
+  .banner:nth-child(20)
+    grid-area: banner4 
+
+  .banner-full:nth-child(21)  
+    grid-area: bannerfull      
+
   
